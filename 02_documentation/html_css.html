@@ -3,6 +3,7 @@
 <head>
 <title>HTML &amp; CSS</title>
 <link rel="icon" type="image/png" href="/favicon.png" >
+<link rel="stylesheet" href="/ep1000digfab.css" >
 </head>
 <body>
 
@@ -21,17 +22,16 @@
 <div style="height:2em"></div>
 
 <!-- Remember to change the title of the page -->
-# HTML &amp; CSS
+# HTML & CSS
 
-[Presentation - HTML](ep1000_html.pdf)
-
-[Presentation - CSS](ep1000_css.pdf)
 
 This section looks at developing a static website using HTML and CSS.  This is essential development of any website/webpage as all pages are finally rendered using HTML and formatted accordingly using CSS.
 
 It is important for any developer to understand the basics of HTML and CSS.
 
 ## HTML
+
+[Presentation - HTML](ep1000_html.pdf)
 
 **Hypertext Markup Language** (HTML or HTM) is the standard markup language for documents to be displayed on a web browser.  A markup language annotates a text document such that it is distinguishable from normal text so that when the document is processed for display, the markup is used for the formatting and does not change the text content.
 
@@ -58,7 +58,7 @@ This is the [basic outline of a HTML file](https://www.w3schools.com/html/html_b
     - an image (resized) which is loaded together with the page
     - and links to other sites
 
-## Basic Structure
+### Basic Structure
 
 ```
 <!DOCTYPE html>
@@ -143,9 +143,61 @@ You could watch the following videos as a start as well:
 -   Clever Programmer [HTML Crash Course for Absolute Beginners 2020](https://youtu.be/FNGoExJlLQY) which may appeal to younger viewers!
 
 
-### Navigation
+### Ex1 Basic HTML page
 
-Here is an [example](navigation/navigation.md) of how you would navigate your site if you were to structure it using folders.
+With your current knowledge of HTML, build the following webpage:
+
+![Basic HTML About Page](ex1_about_page.png)
+
+This page tests your knowledge on the following HTML concepts:
+- Basic HTML page design
+- Headers, paragraphs, text formatting
+- Tables
+- Images
+- Hypertext links
+- Use the &lt;div&gt; to divide the page in sections
+- Use a single folder to hold the html file, use a sub-folder to hold the images
+
+
+## CSS
+
+[Presentation - CSS](ep1000_css.pdf)
+
+Cascading Style Sheets (CSS) is the language used to style the web pages.
+
+- CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+- CSS saves a lot of work. It can control the layout of multiple web pages all at once
+- Styles can be saved in external files and applied to HTML pages.
+
+### Worked Tutorial
+
+A simple and fast tutorial is to work through a project.
+
+1.  Watch [Youtube: Jake Wright: Learn CSS in 12 minutes](https://youtu.be/0afZj1G0BIE), in its entirety giving an overview of what you about to learn.
+2.  Re-watch the video, this time taking short notes.
+3.  Develop the website as shown in the video and test it out.
+
+You can find more information regarding CSS on the following sites:
+- [W3Schools CSS Tutorial](https://www.w3schools.com/css/default.asp)
+- [TutorialsPoint Learn CSS](https://www.tutorialspoint.com/css/index.htm)
+
+
+### Ex2 Website Template
+
+Using Jake Wright's CSS site as a template, modify the necessary HTML and CSS files to create your own site with the following requirements:
+
+1. Your site needs at least 4 sections
+    - **Home** describes the site and its purpose, giving contents
+    - **About** describes yourself, similar to Ex1
+    - **Blog** a page which has links to your weekly work (each week's work can be on a separate page)
+    - **Final Project** a page which describes how you built your final project
+2. You will need to create your own stylesheet with
+    - a suitable color scheme
+    - navigation to other pages
+    - formatting
+    - size your pages to at least 1024 pixels wide
+3. Create a template page so that you can add new pages easily. Document this as part of your weekly work in the Blog section.
+
 
 
 <!-- Home, Back using Javascript -->
@@ -163,3 +215,4 @@ Here is an [example](navigation/navigation.md) of how you would navigate your si
 <script type="text/javascript" src="/strapdown/v/0.4/strapdown.js"></script>
 </html>
 
+ 

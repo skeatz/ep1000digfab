@@ -1,0 +1,6 @@
+/* Text colorations */
+
+red { color: Red }
+orange { color: Orange }
+pb { color: Purple; font-weight: bold; font-style: italic; }
+green { color: Green }
