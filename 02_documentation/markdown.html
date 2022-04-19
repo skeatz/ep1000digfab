@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Markdown</title>
+<link rel="icon" type="image/png" href="/ep1000digfab/favicon.png">
+<link rel="icon" type="image/x-icon" href="/ep1000digfab/favicon.ico">
+<link rel="stylesheet" href="/ep1000digfab/ep1000digfab.css" >
+</head>
+<body>
+
+<xmp    theme="united"
+        style="display:none;"
+        toc
+        toc-top-link = "Back to top"
+>
+<!-- Home, Back using Javascript -->
+<div>
+  <form>
+   <input type="button" value="Home" onclick="window.location.href='/ep1000digfab/index.html'">
+   <input type="button" value="Back" onclick="history.back()">
+  </form>
+</div>
+<div style="height:2em"></div>
+
+<!-- Remember to change the title of the page -->
+# Markdown
+
+[Presentation](ep1000_markdown.pdf)
+
+Markdown is a <pb>plain text formatting system</pb> aimed at making writing for the Internet easier.  Markdown allows you to write text documents which should be readable without tags interfering with the flow of reading.
+
+## Reasons why you should use Markdown
+
+1. It's easy to learn and fast to use<br>
+  Without thinking, as you write plain text it is already in Markdown.  Add a few rules and you have formatted text. If you prefer, you could ignore all these rules as well, and convey pure information only.
+2. Markdown converts to HTML easily.<br>
+  You also have the option of using HTML in your text whenever things get difficult to produce, but that seldom happens in text writing except for fancy formatting features.
+3. Markdown is future proof<br>
+  Markdown is plain text format. Using plain text ensures that the document can be read anywhere without special editors or file viewers.  You are able to transfer the Markdown document to other formats.  In fact, Markdown can be converted to a number of formats very easily (Ref: [Pandoc](https://pandoc.org/)).<br>
+  Markdown has its own extension (**.md**), however, you could use any extension (including .txt).
+4. Markdown is used everywhere<br>
+  Markdown is more commonly used than you think.Without thinking, Whatsapp and online forums use a format of Markdown, for example \*\*bold\*\* adds **bold** font to your writing.  Other communication tools e.g. Skype, Slack, Facebook Messenger, Wikis uses a form of Markdown.
+5. You don't have to use special software<br>
+  Almost every editor has a feature that allows you to save your work in "plain text", hence you do not need to learn how to use a new software. Most writers choose a "pure text editor" for the increased speed, program size and availability.
+
+## Learning Markdown
+
+Although it is not necessary to "learn" markdown, you can add a lot of features just by mastering a number of keystrokes, the most commonly used are
+
+- creating headings
+- formatting text, **bold**, *italic*, ~~strikethroughs~~
+- creating quotes or blockquotes to highlight points
+- making lists
+- distinguishing code from plain text
+- adding links
+- adding images
+- making simple tables
+
+Here is an [online demo](https://learnmarkdown.com/)
+
+Here is a [Cheatsheet](worksheets/markdown-cheat-sheet.md)!
+
+Here are some very good (and quick) tutorials:
+
+- [Markdown Guide](https://www.markdownguide.org/)
+- [Learning Markdown](https://learnmarkdown.com/)
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+- Microsoft [Communicate effectively on GitHub by using Markdown](https://docs.microsoft.com/en-us/learn/modules/communicate-using-markdown/)
+
+## Markdown tools
+
+Here are some tools that you can use to increase your productivity with Markdown.  I have personally used most of them and list them in order of preference
+
+- [Sublime Text](https://www.sublimetext.com/) a pure text editor, highly configurable
+- [Joplin](https://joplinapp.org/) a note taker in Markdown, portable across platforms, configurable and can use SublimeText for complex work
+- [SimpleNote](https://simplenote.com/) a note taker in Markdown, portable, surpassed by Joplin
+
+## Markdown and GitHub
+
+In order to view Markdown in its full glory, we must first understand how it is rendered on webpages/Internet.  Although Markdown is "text-like", it's full features have to be processed before being displayed.  Here is a quick explanation.
+
+![Processing Markdown](processing_markdown.png)
+
+1. Markdown is stored in a pure text document (with the extension **.md** or **.markdown**) to distinguish it from pure text.)
+2. When a Markdown document is accessed from the web, a processor/program on the web-server, identifies (.md) and reads the document.  It converts the document into HTML and attaches a CSS stylesheet.
+3. The HTML and CSS file is sent to the requester and displayed on the web browser.
+
+Understanding the above process, allows us to
+
+- add HTML tags to a Markdown document to enhance it's capabilities
+- use an alternate stylesheet to change the look of the markdown file.
+
+
+<!-- Home, Back using Javascript -->
+<div style="height:2em"></div>
+<div>
+  <form>
+   <input type="button" value="Home" onclick="window.location.href='/ep1000digfab/index.html'">
+   <input type="button" value="Back" onclick="history.back()">
+  </form>
+</div>
+
+<!--End of markdown area-->
+</xmp>
+</body>
+<script type="text/javascript" src="/ep1000digfab/dist/strapdown.js"></script>
+</html>
+
