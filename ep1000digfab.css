@@ -4,3 +4,55 @@ red { color: Red }
 orange { color: Orange }
 pb { color: Purple; font-weight: bold; font-style: italic; }
 green { color: Green }
+
+
+
+img[src*="thumbnail"] {
+   width:150px;
+   height:100px;
+}
+
+
+// for images
+
+section.info{
+    display: block;
+    width:100%;
+    margin:auto;
+}
+
+figure.infoimg{
+    float: left;
+    // width: 25%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+div.infotext{
+    float: left;
+    // border: thin silver solid;
+    max-width: 500px;
+    margin: 5px;
+    padding : 5px;
+}
+
+div.infoclr{
+    clear: both;
+}
+
+img.w200{
+    width: 200px;
+}
+
+img.w320{
+    width: 320px;
+}
+
+img.w640 {
+    width: 640px;
+}
