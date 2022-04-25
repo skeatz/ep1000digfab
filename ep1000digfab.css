@@ -1,20 +1,20 @@
-/* Text colorations */
-
-red { color: Red }
-orange { color: Orange }
-pb { color: Purple; font-weight: bold; font-style: italic; }
-green { color: Green }
-
-
 /* classes */
 
 div.blankline_2 {
-  height: 2em;
+  height:2em;
 }
 
+
+/* Text colorations */
+
+red { color: Red; }
+orange { color: Orange; }
+pb { color: Purple; font-weight: bold; font-style: italic; }
+green { color: Green; }
+
+
+
 /* id */
-
-
 
 img[src*="thumbnail"] {
    width:150px;
@@ -42,7 +42,7 @@ figure.infoimg{
     padding: 5px;
 }
 
-div.infotext{
+.infotext{
     float: left;
     /* border: thin silver solid; */
     max-width: 500px;
@@ -50,18 +50,18 @@ div.infotext{
     padding : 5px;
 }
 
-div.infoclr{
+.infoclr{
     clear: both;
 }
 
-img.w200 {
+.w200 {
     width: 200px;
 }
 
-img.w320 {
+.w320 {
     width: 320px;
 }
 
-img.w640 {
+.w640 {
     width: 640px;
 }
