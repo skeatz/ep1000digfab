@@ -22,7 +22,7 @@ img[src*="thumbnail"] {
 }
 
 
-// for images
+/* for images */
 
 section.info{
     display: block;
@@ -32,7 +32,7 @@ section.info{
 
 figure.infoimg{
     float: left;
-    // width: 25%;
+    /* width: 25%; */
     text-align: center;
     font-style: italic;
     font-size: smaller;
@@ -44,7 +44,7 @@ figure.infoimg{
 
 div.infotext{
     float: left;
-    // border: thin silver solid;
+    /* border: thin silver solid; */
     max-width: 500px;
     margin: 5px;
     padding : 5px;
@@ -54,11 +54,11 @@ div.infoclr{
     clear: both;
 }
 
-img.w200{
+img.w200 {
     width: 200px;
 }
 
-img.w320{
+img.w320 {
     width: 320px;
 }
 

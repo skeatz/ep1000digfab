@@ -179,6 +179,12 @@ Here are some of the common characteristics that you can tweak
 - Bed adhesion
 - Object orientation
 
+<div class="blankline_2"></div>
+
+### Extruder Module
+
+<!--
+
 <div>
 <section class="info"><a href="images/0907_extruder.png">
  <figure class="infoimg">
@@ -188,12 +194,14 @@ Here are some of the common characteristics that you can tweak
 <div  class="infotext" markdown="1">
 </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
+</section> 
 </div>
+-->
+
+<img class="w200" src="images/0907_extruder.png" alt="Extruder module" />
 
 
-**Extruder Module**
-
+Extruder Module
 - The extruder is a heated tube with a nozzle.
 - A stepper motor feeds the filament into the nozzle.  This allows control of the amount of filament to be extruded (fed in) or retracted.
 - The extruder heats up the filament and melts it before forcing it out of the nozzle.
@@ -201,14 +209,14 @@ Here are some of the common characteristics that you can tweak
 - The flow rate of the filament is controlled by the stepper motor.  You can adjust this to 20% ~150% of the normal flow rate through software.
 - Some 3D printers can have more than one nozzle, allowing for different colors or material.
 
+<div class="blankline_2"></div>
 
+### Layer Height
+
+<img class="w320" src="images/0908_layerHeight.png" alt="Layer Height" />
 
 
 <!--
-|**Layer Height**||
-|:-------------------------|--------------------------:|
-| <ul><li>The height of each printed layer of the 3D print</li><li>Thinner layers give finer prints</li><li>3D prints with thinner layers take longer to print</li><li>Ranges from 0.1~0.4mm for a 0.4 nozzle (typical 0.2mm)</li><li>Affects resolution, speed and smoothness of print</li></ul> | ![Layer height](images/0908_layerHeight.png) |
--->
 <div>
 <section class="info"><a href="images/0908_layerHeight.png">
  <figure class="infoimg">
@@ -217,8 +225,7 @@ Here are some of the common characteristics that you can tweak
  </figure></a>
 <div  class="infotext" markdown="1">
 
-**Layer height**
-
+Layer height
 - The height of each printed layer of the 3D print
 - Thinner layers give finer prints
 - 3D prints with thinner layers take longer to print
@@ -226,15 +233,27 @@ Here are some of the common characteristics that you can tweak
 - Affects resolution, speed and smoothness of print
  </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
+</section> 
 </div>
+-->
+
+Layer height
+- The height of each printed layer of the 3D print
+- Thinner layers give finer prints
+- 3D prints with thinner layers take longer to print
+- Ranges from 0.1~0.4mm for a 0.4 nozzle (typical 0.2mm)
+- Affects resolution, speed and smoothness of print
+
+<div class="blankline_2"></div>
+
+### Wall Thickness
 
 <!--
 |**Wall Thickness**||
 |:-------------------------|--------------------------:|
 | <ul><li>Controls the number of strands required for the thickness of the wall</li><li>if the Layer Height=0.2mm, then a wall thickness of 1mm will require 5 strands laid side-by-side</li><li>affects print time and strength of print</li> <li>Typical wall thickness is min 0.8mm</li></ul>|![Wall Thickness](images/0909_wallThickness.png)|
 -->
-
+<!--
 <section class="info"><a href="images/0909_wallThickness.png">
  <figure class="infoimg">
  <img class="w320" src="images/0909_wallThickness.png" alt="Wall Thickness" />
@@ -248,15 +267,24 @@ Here are some of the common characteristics that you can tweak
 * Typical wall thickness is min 0.8mm
  </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
-
-
-<!--
-|**Infill Percentages**| |
-|:-------------------------|--------------------------:|
-| <ul><li>Controls the amount of fill in the internal cavities</li><li>Higher infills give more strength</li><li>Higher infills take longer time to print</li><li>You can select different infill patters</li><li>Typical infills 10~18%</li></ul>| ![Infill Percentages](images/0910_infill.png)]|
+</section> 
 -->
 
+<img class="w320" src="images/0909_wallThickness.png" alt="Wall Thickness"/>
+
+Wall Thickness
+- Controls the number of strands required for the thickness of the wall
+- if the Layer Height=0.2mm, then a wall thickness of 1mm will require 5 strands laid side-by-side
+- Affects print time and strength of print
+- Typical wall thickness is min 0.8mm
+
+
+<div class="blankline_2"></div>
+
+
+### Infill Percentage
+
+<!--
 <section class="info"><a href="images/0910_infill.png">
  <figure class="infoimg">
  <img class="w320" src="images/0910_infill.png" alt="Infill Percentage" />
@@ -271,14 +299,24 @@ Here are some of the common characteristics that you can tweak
 * Typical infills 10~18%.
  </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
-
-<!--
-|**Bridging**|![blank](images/blank.png)|
-|:-------------------------|--------------------------:|
-| <ul><li>Refers to the prints between 2 points that have no connection to each other</li><li>Normally, a 3D printer first prints the base layer, on which it builds up layer by layer. In contrast, there is no base layer between two points when bridging.</li><li>Consequently, printing must be done in the air so that the gap can be bridged.</li><li>There is a limit before the print fails and sagging strands appear</li><li>You need to test for the maximum distance for each printer</li><li>Affects the quality of the print</li></ul> | ![Bridging effects](images/0911_bridging.jpg) |
+</section> 
 -->
 
+<img class="w320" src="images/0910_infill.png" alt="Infill Percentage" />
+
+Infill Percentage
+- Controls the amount of fill in the internal cavities.
+- Higher infills give more strength.
+- Higher infills take longer time to print.
+- You can select different infill patterns.
+- Typical infills 10~18%.
+
+
+<div class="blankline_2"></div>
+
+### Bridging
+
+<!--
 <section class="info"><a href="images/0911_bridging.jpg">
  <figure class="infoimg">
  <img class="w320" src="images/0911_bridging.jpg" alt="Bridging" />
@@ -294,15 +332,23 @@ Here are some of the common characteristics that you can tweak
 *  Affects the quality of the print.
  </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
+</section> -->
 
+<img class="w320" src="images/0911_bridging.jpg" alt="Bridging" />
+
+Bridging
+-  Refers to the prints between 2 points that have no connection to each other.
+-  Normally, a 3D printer first prints the base layer, on which it builds up layer by layer. In contrast, there is no base layer between two points when bridging.
+-  Consequently, printing must be done in the air so that the gap can be bridged.
+-  There is a limit before the print fails and sagging strands appear
+-  You need to test for the maximum distance for each printer
+-  Affects the quality of the print.
+
+<div class="blankline_2"></div>
+
+### Overhang
 
 <!--
-|**Overhang**|![blank](images/blank.png)|
-|:-------------------------|--------------------------:|
-| <ul><li>3D printers cannot print in "air"</li><li>There is a limit where there is insufficient support to handle the print</li><li>Most printers can handle an overhang of 45 deg</li><li>Perform a test print to determine your printer's limits</li></ul>| ![Overhang test](images/0912_overhang.png)|
--->
-
 <section class="info"><a href="images/0912_overhang.png">
  <figure class="infoimg">
  <img class="w320" src="images/0912_overhang.png" alt="Overhang Limits" />
@@ -316,13 +362,23 @@ Here are some of the common characteristics that you can tweak
 * Perform a test print to determine your printer's limits (You can find examples in Thingiverse!)
  </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
+</section>
+-->
+
+<img class="w320" src="images/0912_overhang.png" alt="Overhang Limits" />
+
+Overhang Limits
+- 3D printers cannot print in "air"
+- There is a limit where there is insufficient support to handle the print
+- Most printers can handle an overhang of 45 deg
+- Perform a test print to determine your printer's limits (You can find examples in Thingiverse!)
+
+
+<div class="blankline_2"></div>
+
+### Platform Adhesion
 
 <!--
-|**Platform Adhesion**|![blank](images/blank.png)|
-|:-------------------------|--------------------------:|
-| <ul><li>The print bed is usually heated to improve adhesion</li><li>Sometimes, the print object requires help in adhering to the print bed</li><li>Skirts are used to provide an outline - no adhesion</li><li>Brims allow some adhesion to the print perimeter</li><li>Rafts are full platforms on which the 3D print is placed</li></ul>| ![Platform Adhesion](images/0913_platformAdhesion.png)|
--->
 
 <section class="info"><a href="images/0913_platformAdhesion.png">
  <figure class="infoimg">
@@ -338,15 +394,23 @@ Here are some of the common characteristics that you can tweak
 * Rafts are full platforms on which the 3D print is placed.  Print adhesion is onto the raft instead of the bed.
  </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
-
-
-<!--
-|**Supports**||
-|:-------------------------|--------------------------:|
-| <ul><li>Supports are used to aid in printing overhangs</li><li>Supports make impossible prints possible</li><li>Supports are removed after the print is complete</li><li>Supports add to the print time as well as the touch-up and finishing time to the model</li><li>Orientation of the model helps in the determining of supports</li></ul> | ![Object with supports](images/0914a_supportsOn.png)  ![Object supports removed](images/0914b_supportsOff.png) |
+</section>
 -->
 
+<img class="w320" src="images/0913_platformAdhesion.png" alt="Platform Adhesion" />
+
+Platform Adhesion
+- The print bed is usually heated to improve adhesion
+- Sometimes, the print object requires help in adhering to the print bed
+- Skirts are used to provide an outline - no adhesion
+- Brims allow some adhesion to the print perimeter
+- Rafts are full platforms on which the 3D print is placed.  Print adhesion is onto the raft instead of the bed.
+
+<div class="blankline_2"></div>
+
+### Supports
+
+<!--
 <section class="info"><a href="images/0914a_supportsOn.png">
  <figure class="infoimg">
  <img class="w320" src="images/0914a_supportsOn.png" alt="Supports in place" />
@@ -366,15 +430,24 @@ Here are some of the common characteristics that you can tweak
 * Orientation of the model helps in the determining of supports
  </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
-
-<!--
-|**Object Placement & Orientation**|
-|:-------------------------|
-|![Object orientation](images/0915_orientation.png)|
-| <ul><li>The placement of the object plays an important role in the success of the print</li><li>Changing the orientation can improve the adhesion and limit the use of supports</li><li>Use the **Rotate** feature to change the orientation</li><li>Use the **Place on bed** feature to ensure proper placement on the print bed</li></ul> |
+</section> 
 -->
 
+<img class="w320" src="images/0914a_supportsOn.png" alt="Supports in place" />
+
+Supports
+- Supports are used to aid in printing overhangs
+- Supports make impossible prints possible
+- Supports are removed after the print is complete
+- Supports add to the print time as well as the touch-up and finishing time to the model
+* Orientation of the model helps in the determining of supports
+
+
+<div class="blankline_2"></div>
+
+### Object Placement
+
+<!--
 <section class="info"><a href="images/0915_orientation.png">
  <figure class="infoimg">
  <img class="w320" src="images/0915_orientation.png" alt="Object Placement & Orientation" />
@@ -388,9 +461,18 @@ Here are some of the common characteristics that you can tweak
 * Use the **Place on bed** feature to ensure proper placement on the print bed
  </div>
  <div class="infoclr"></div>
-</section> <!--End of Section.info-->
+</section> -->
 
-&nbsp;
+<img class="w320" src="images/0915_orientation.png" alt="Object Placement & Orientation" />
+
+Object Placement & Orientation
+- The placement of the object plays an important role in the success of the print
+- Changing the orientation can improve the adhesion and limit the use of supports
+- Use the **Rotate** feature to change the orientation
+- Use the **Place on bed** feature to ensure proper placement on the print bed
+
+
+<div class="blankline_2"></div>
 
 
 ### Assignment: 3D Printing
