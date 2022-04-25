@@ -45,7 +45,8 @@ The foremost advantage of 3D printing is the creation of prototypes.  In any des
 References:
 
 1.  [DFab Notes on 3D Printing](https://skeatz.github.io/DigitalFab-PrototypingFundamentals/files/05-3dprint.html) on Mr. Steven Chew's site.
-2.  Fablab Teaching Notes at [ESP](https://esp.sp.edu.sg) > My Community > Fablab@SP
+
+<div class="blankline_2"></div>
 
 ## A Brief Look at 3D Printing
 
@@ -57,7 +58,7 @@ References:
 
 ![3D Printed Objects](images/0901_3dprintedobjects.png)
 
-<div style="height:2em"></div>
+<div class="blankline_2"></div>
 
 ## 3D Printers at Fablab@SP
 
@@ -97,11 +98,10 @@ References:
   - Delta (using polar-Z)
   - In both cases, the printer head is in the Z-axis
 
-<div style="height:2em"></div>
 
 ![Types of FFF Printers](images/0904_FFFmethods.png)
 
-<div style="height:2em"></div>
+<div class="blankline_2"></div>
 
 ## 3D Printer components
 
@@ -113,38 +113,38 @@ The following diagram shows the different parts of a FFF 3D Printer.  The printe
 | [![3D Printer Parts](images/0905_3dprinterparts.jpg)](images/0905_3dprinterparts.jpg) |
 -->
 
+<div>
 <section class="info"><a href="images/0905_3dprinterparts.jpg">
  <figure class="infoimg">
  <img class="w640" src="images/0905_3dprinterparts.jpg" alt="3D Printer Parts" />
  <figcaption>3D Printer Parts</figcaption>
  </figure></a>
-<div  class="infotext" markdown="1">
- </div>
+<div  class="infotext" markdown="1"></div>
  <div class="infoclr"></div>
 </section> <!--End of Section.info-->
+</div>
 
+The important parts for you to note are:
+- the **Hot End** of the extruder.  Temperatures at the hot-end can reach in excess of 180 degC, you could easily burn your fingers
+- the **print bed** of our printers are heated to 60 degC in order for the fused filament to adhere.  You have to be extra careful with the bed, not because it can burn your fingers.  If there is slight mis-alignment of the print bed, the print job will fail.  It is essential that the print bed is as level as possible.
+- the **filament** is kept in a spool at the side/back of the printer, ensure that the feed is constant and free of obstruction.
 
-- The important parts for you to note are:
-
-  - the **Hot End** of the extruder.  Temperatures at the hot-end can reach in excess of 180 degC, you could easily burn your fingers
-  - the **print bed** of our printers are heated to 60 degC in order for the fused filament to adhere.  You have to be extra careful with the bed, not because it can burn your fingers.  If there is slight mis-alignment of the print bed, the print job will fail.  It is essential that the print bed is as level as possible.
-  - the **filament** is kept in a spool at the side/back of the printer, ensure that the feed is constant and free of obstruction.
-
-<div style="height:2em"></div>
+<div class="blankline_2"></div>
 
 ## The 3D Printing Process
 
-* The 3D Printing Process is a **Digital Fabrication** process.  We start with a digital design and convert it to a format which the 3D printer can implement.
+The 3D Printing Process is a **Digital Fabrication** process.  We start with a digital design and convert it to a format which the 3D printer can implement.
 
-* The digital process begins with a design of a 3D model, which can be obtained by
-    * Designing with CAD software (e.g. Fusion 360, SketchUp, Rhino)
-    * Curated from archives (e.g. [Thingiverse](https://www.thingiverse.com/), [My Minifactory](https://www.thingiverse.com/) or other libraries)
-* In using CAD, we develop a 3D model in the application of choice, we need to find a common technique of representing this model.  The two common methods are
-    * STL (Standard Tesselaltion Language)
-    * OBJ 
-    * Other methods (Ref: All3DP: [3D File Formats](https://all3dp.com/3d-file-format-3d-files-3d-printer-3d-cad-vrml-stl-obj/))
+The digital process begins with a design of a 3D model, which can be obtained by
+- Designing with CAD software (e.g. Fusion 360, SketchUp, Rhino)
+- Curated from archives (e.g. [Thingiverse](https://www.thingiverse.com/), [My Minifactory](https://www.thingiverse.com/) or other libraries)
 
-* Since we are using Fusion 360, how do we convert our 3D model into a STL file ?
+In using CAD, we develop a 3D model in the application of choice, we need to find a common technique of representing this model.  The two common methods are
+- STL (Standard Tesselaltion Language)
+- OBJ 
+- Other methods (Ref: All3DP: [3D File Formats](https://all3dp.com/3d-file-format-3d-files-3d-printer-3d-cad-vrml-stl-obj/))
+
+Since we are using Fusion 360, how do we convert our 3D model into a STL file ?
 
 |<img scr="images/blank.png" width="50%">| Method   |
 |:-------------------------|:---------|
@@ -152,48 +152,56 @@ The following diagram shows the different parts of a FFF 3D Printer.  The printe
 |![Make 3D Print](images/0906b_FusionMake3D.png) | Tools > Make > 3D Print |
 |![3D Print Menu](images/0906c_Fusion3Dprint.png) | 3D Print Menu<br>*  Select Object<br>*  Preview Mesh : Yes<br>*  Refinement : Medium<br>*  Output > Send to 3d Print Utility : No<br><br>Output will be saved as an STL file.|
 
-* We are now ready to slice our STL file.
-    * Slicing cuts the object into layers
-    * Each layer is a printable level in the X-Y coordinates
-    * The 3D Printer head moves up one layer at-a-time in the Z-axis
+We are now ready to slice our STL file.
+- Slicing cuts the object into layers
+- Each layer is a printable level in the X-Y coordinates
+- The 3D Printer head moves up one layer at-a-time in the Z-axis
 
-* The software we will use is [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura) which can be applied to all 3 printers in the Fablab.  There are other slicer software available as well, sometimes proprietory to a particular brand of printer
-    * Simplify 3D- Makerbot Print- MBot 3D
-    * [Others - All3DP](https://all3dp.com/1/best-3d-slicer-software-3d-printer/)
+The software we will use is [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura) which can be applied to all 3 printers in the Fablab.  There are other slicer software available as well, sometimes proprietory to a particular brand of printer
+- Simplify 3D- Makerbot Print- MBot 3D
+- [Others - All3DP](https://all3dp.com/1/best-3d-slicer-software-3d-printer/)
 
-*  The main job of the slicer software is to*  convert the STL file into layers,*  determine the print characteristic of each layer*  convert the print characteristics of the layer into a language understandable by the 3D Printer (usually gcode)
+The main job of the slicer software is to*  convert the STL file into layers,*  determine the print characteristic of each layer*  convert the print characteristics of the layer into a language understandable by the 3D Printer (usually gcode)
 
-*  The slicer software will usually have the configuration code for a particular set of 3D Printer(s).  The machine-readable code is saved/transferred to the 3D Printer using a SDCard/Thumbdrive or by network to perform the actual printing process.
+The slicer software will usually have the configuration code for a particular set of 3D Printer(s).  The machine-readable code is saved/transferred to the 3D Printer using a SDCard/Thumbdrive or by network to perform the actual printing process.
 
-### 3D Printer Characteristics
+<div class="blankline_2"></div>
 
-*  Before we can start using the slicer software, we need to understand some of the characteristics of our 3D printer.  These characteristics help in the tuning of the software parameters, allowing us to have* finer prints* faster prints* stronger prints
+## 3D Printer Components
 
-*  Here are some of the common characteristics that you can tweak
-    * Layer height (extruded filament thickness)
-    * Wall thickness-  Infill percentages
-    * Bridging and overhangs
-    * Supports
-    * Bed adhesion
-    * Object orientation
+Before we can start using the slicer software, we need to understand some of the characteristics of our 3D printer.  These characteristics help in the tuning of the software parameters, allowing us to have* finer prints* faster prints* stronger prints
 
+Here are some of the common characteristics that you can tweak
+- Layer height (extruded filament thickness)
+- Wall thickness-  Infill percentages
+- Bridging and overhangs
+- Supports
+- Bed adhesion
+- Object orientation
+
+<div>
 <section class="info"><a href="images/0907_extruder.png">
  <figure class="infoimg">
  <img class="w320" src="images/0907_extruder.png" alt="Extruder module" />
  <figcaption>Extruder module</figcaption>
  </figure></a>
 <div  class="infotext" markdown="1">
-**Extruder Module**
-
-* The extruder is a heated tube with a nozzle.
-* A stepper motor feeds the filament into the nozzle.  This allows control of the amount of filament to be extruded (fed in) or retracted.
-* The extruder heats up the filament and melts it before forcing it out of the nozzle.
-* Nozzle sizes range from 0.1 to 0.8 mm.  The standard nozzle is **0.4mm**.
-* The flow rate of the filament is controlled by the stepper motor.  You can adjust this to 20% ~150% of the normal flow rate through software.
-* Some 3D printers can have more than one nozzle, allowing for different colors or material.
- </div>
+</div>
  <div class="infoclr"></div>
 </section> <!--End of Section.info-->
+</div>
+
+
+**Extruder Module**
+
+- The extruder is a heated tube with a nozzle.
+- A stepper motor feeds the filament into the nozzle.  This allows control of the amount of filament to be extruded (fed in) or retracted.
+- The extruder heats up the filament and melts it before forcing it out of the nozzle.
+- Nozzle sizes range from 0.1 to 0.8 mm.  The standard nozzle is **0.4mm**.
+- The flow rate of the filament is controlled by the stepper motor.  You can adjust this to 20% ~150% of the normal flow rate through software.
+- Some 3D printers can have more than one nozzle, allowing for different colors or material.
+
+
 
 
 <!--
@@ -201,23 +209,25 @@ The following diagram shows the different parts of a FFF 3D Printer.  The printe
 |:-------------------------|--------------------------:|
 | <ul><li>The height of each printed layer of the 3D print</li><li>Thinner layers give finer prints</li><li>3D prints with thinner layers take longer to print</li><li>Ranges from 0.1~0.4mm for a 0.4 nozzle (typical 0.2mm)</li><li>Affects resolution, speed and smoothness of print</li></ul> | ![Layer height](images/0908_layerHeight.png) |
 -->
-
+<div>
 <section class="info"><a href="images/0908_layerHeight.png">
  <figure class="infoimg">
  <img class="w320" src="images/0908_layerHeight.png" alt="Layer Height" />
  <figcaption>Layer Height</figcaption>
  </figure></a>
 <div  class="infotext" markdown="1">
+
 **Layer height**
-* The height of each printed layer of the 3D print
-* Thinner layers give finer prints
-* 3D prints with thinner layers take longer to print
-* Ranges from 0.1~0.4mm for a 0.4 nozzle (typical 0.2mm)
-* Affects resolution, speed and smoothness of print
+
+- The height of each printed layer of the 3D print
+- Thinner layers give finer prints
+- 3D prints with thinner layers take longer to print
+- Ranges from 0.1~0.4mm for a 0.4 nozzle (typical 0.2mm)
+- Affects resolution, speed and smoothness of print
  </div>
  <div class="infoclr"></div>
 </section> <!--End of Section.info-->
-
+</div>
 
 <!--
 |**Wall Thickness**||

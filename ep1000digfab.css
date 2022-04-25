@@ -6,6 +6,15 @@ pb { color: Purple; font-weight: bold; font-style: italic; }
 green { color: Green }
 
 
+/* classes */
+
+div.blankline_2 {
+  height: 2em;
+}
+
+/* id */
+
+
 
 img[src*="thumbnail"] {
    width:150px;
