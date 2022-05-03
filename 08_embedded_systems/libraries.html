@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Missing!</title>
+<link rel="icon" type="image/png" href="/ep1000digfab/favicon.png">
+<link rel="icon" type="image/x-icon" href="/ep1000digfab/favicon.ico">
+<link rel="stylesheet" href="/ep1000digfab/ep1000digfab.css" >
+</head>
+<body>
+
+<xmp    theme="united"
+        style="display:none;"
+        toc
+        toc-top-link = "Back to top"
+>
+<!-- Home, Back using Javascript -->
+<div>
+  <form>
+   <input type="button" value="Home" onclick="window.location.href='/ep1000digfab/index.html'">
+   <input type="button" value="Back" onclick="history.back()">
+  </form>
+</div>
+<div style="height:2em"></div>
+
+<!-- Remember to change the title of the page -->
+# Libraries
+
+[Presentation: Using Arduino Libraries](ep1000_libraries.pdf)
+
+The power and convience of the Arduino system is the extensive availability of libraries for almost every sensor and acutator availble.  To use a device, one only needs to interface the device to the Arduino system (following the many tutorials available on the Internet), locate the library (code to interact with the device), load the library into the IDE, write and compile your application.
+
+This makes the Arduino a very versatile system which is easy to implement and available to hobbists to expert.
+
+The library consists of
+- a **.cpp** file which holds the code (writtend in c++/Processing).  This code "talks" to the device and instructs the device or reads data from the device.
+- a **.h** or **.hpp** header file which holds the functions available to interface the device and instructions on how to use them.  This file must be included in your code.
+
+## Loading the library
+
+To use the library we need to "load" the library into the Arduino system.  There are 3 methods to do this:
+
+- Use the Arduino IDE Library Management system
+- Download the compressed (.zip) library and use the Arduino IDE to load it into the User library location
+- Download the compressed (.zip) library, de-compress the library into the .h and .cpp files, copy the files into the Arduino Library folder and restart the Arduino IDE.
+
+First, let us note down the folders where the libaries may be located:
+
+| Library | Folder location |
+|---------|-----------------|
+| Arduino IDE System Libraries | C:\Program Files (x86)\Arduino\libraries |
+| User libraries | D:\Users\<username>\Documents\Arduino\libraries |
+
+You can locate the User library folder by using the **IDE > File > Preferences** to locate the Sketchbook location where the user library location can be found.
+
+&nbsp;
+
+### Arduino IDE Managed Libraries
+
+The simplest method of loading a library is to use the Library Management tool in the IDE.  This is located using **IDE > Tools > Manage Libraries** 
+
+![IDE Library Management Tool](images/ideLibrarymanager.png)
+
+Type in the name of the library you want to load and click **OK**.  The Arduino IDE will handle the reat.  The library and the example file(s) will be automatically downloaded and installed.  The library will be automatically installed in the User Library Folder.
+
+This is the simplest way of loading a library.  The library may now be included using the **IDE > Sketch > Include Library**. You will be able to file the new library in the list.  clicking on the library will inert the "#include &lt;library.h&gt;" line in your code.
+
+**Problems:**  Sometimes the library you require is not in the System Library list because the device is new or rarely used, you may have re-written the library or is only available for a particular version of the device.
+
+&nbsp;
+
+### Compressed Libraries
+
+The second method requires you to
+1.  Manually download the library from the device site as a compress (.zip) file.
+2.  Use **IDE > Sketch > Include Library > Add ZIP Library** to point to the downloaded file.
+3.  The Arduino IDE will do the rest and install the library in the User Library folder.
+
+![Include ZIP library](images/includeziplibary.png)
+
+This method of loading the library allows you to select a particular library for your code.  Hence, you can include your own libraries or a particular library the works only with your board.
+
+**Problems:**  There are so many libraries out there.  You need to know specifially which one you would like to use and once you ahve checked that it is working, put a note in your code where you have obtained your code for future reference.
+
+&nbsp;
+
+### Manually installed library
+
+This is the most manual method of installing a libary where the user have full control.  Note however, that this method is not recommended as you can make mistakes or located your files in wrong folders etc.  This method requires you to
+1.  Manually download the library from the device site.  This is usually a compress (.zip) file.
+2.  Extract the files from the ZIP folder, which usually creates a folder with the name of the libary.
+3.  Check that the folder has the **.h** and **.cpp** files (you may decided to exclude the example files/folders)
+4.  Copy the folder (with the .h and .cpp file) to either the Arduino System Library Folder or the User Library folder.
+5.  Restart the Arduino IDE
+
+The library will be displayed and included the normal way as in the above 2 cases.  This allows you to even include libraries that you have written yourself.
+
+**Problems:**  Errors may occur that will halt your IDE, which may give rise to other problems in troubleshooting.
+
+### References:
+
+Here are some references:
+1.  [Adafruit: All About Arduino Libraries](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/how-to-install-a-library)
+2.  [Sparkfun: Installing an Arduino Library](https://learn.sparkfun.com/tutorials/installing-an-arduino-library/all)
+3.  [Youtube: Arduino Libraries! How to Install them properly! Tutorial showing you 3 different ways](https://www.youtube.com/watch?v=M6PZOqNHKxM)
+
+&nbsp;
+
+## Tested Libraries
+
+Use the following table as a guide to the tested libraries and code for your IO devices : [IO Devices Collection](iodevices.html)
+
+Here is a collection of sample code (incomplete) for use.  These have be discussed or tested in the practicals.
+- [Using an I2C LCD](code/uno_i2c_lcd.ino)
+- Using an LM35 to measure temperature
+- [Using a Potentiometer with mapping](code/uno_potentiometer.ino)
+- [Using a Potentiometer and Rotary Encoder without use of libraries](code/uno_rotaryencoder_lib.ino)
+  - code skips readings because of debouncing
+  - compare the results on the LCD with Serial
+- [Using a Rotary Encoder & LCD using a library](code/uno_rotaryencoder_lib.ino)
+  - more accurate method using debouncing
+- [Using a Rotary Encoder in the RAW mode as a component](code/uno_rotary_encoder_raw.ino)
+- [Using a Rotary Encoder in a module board](code/uno_rotary_encoder_module.ino)
+- [Using a Neopixel Strip of 8 WS2818 LEDs](code/uno_neopixel.ino)
+
+
+<!-- Home, Back using Javascript -->
+<div style="height:2em"></div>
+<div>
+  <form>
+   <input type="button" value="Home" onclick="window.location.href='/ep1000digfab/index.html'">
+   <input type="button" value="Back" onclick="history.back()">
+  </form>
+</div>
+
+<!--End of markdown area-->
+</xmp>
+</body>
+<script type="text/javascript" src="/ep1000digfab/dist/strapdown.js"></script>
+</html>
+

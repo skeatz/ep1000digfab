@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Missing!</title>
+<link rel="icon" type="image/png" href="/ep1000digfab/favicon.png">
+<link rel="icon" type="image/x-icon" href="/ep1000digfab/favicon.ico">
+<link rel="stylesheet" href="/ep1000digfab/ep1000digfab.css" >
+</head>
+<body>
+
+<xmp    theme="united"
+        style="display:none;"
+        toc
+        toc-top-link = "Back to top"
+>
+<!-- Home, Back using Javascript -->
+<div>
+  <form>
+   <input type="button" value="Home" onclick="window.location.href='/ep1000digfab/index.html'">
+   <input type="button" value="Back" onclick="history.back()">
+  </form>
+</div>
+<div style="height:2em"></div>
+
+<!-- Remember to change the title of the page -->
+# Collection of Devices & Libraries
+
+
+## Input Devices
+
+|Physical     |Sensor           |Library       |Comment             |Reference   |
+|:------------|:----------------|:-------------|:-------------------|:------------------------------------|
+|Sound|Microphone|Nil|Use analog inputs|[LastMinuteEngineers](https://lastminuteengineers.com/sound-sensor-arduino-tutorial/)|
+|Light|Light Dependent Resistor|Nil|Use analog inputs LDR 5516 with 5K Resistor|[CircuitDigest](https://circuitdigest.com/microcontroller-projects/arduino-light-sensor-using-ldr/)|
+|Distance|IR LED (5cm)|Nil|Use digital inputs|[]()|
+||Ultrasonic (2-50cm) HC-SR04 Ultrasonic Sensor|NewPing (Tim Eckel)|Can also use trigger and pulsewidth measurement|[LastMinuteEngineers](https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/)|
+||PIR (>50cm) HC-SR501 Motion Sensor|Nil|Use digital inputs|[LastMinuteEngineers](https://lastminuteengineers.com/pir-sensor-arduino-tutorial/)|
+||RCWL-0516 - Doppler Radar Distance|Nil|Use digital inputs|[Dronebotworkshop](https://dronebotworkshop.com/rcwl-0516-experiments/)|
+|Weight|Load Cell (up to 5Kg)|HX711_ADC|Use HX-711 4-wire amplifier|[CircuitJournal](https://circuitjournal.com/four-wire-load-cell-with-HX711)|
+|Temperature|LM35|Nil|Use analog input and multiply with factor|[Dronebotworkshop](https://dronebotworkshop.com/arduino-temperature/)|
+||DS18B20|Dallas Temperature|Need to install 1Wire Library|[LastMinuteEngineers](https://lastminuteengineers.com/ds18b20-arduino-tutorial/)|
+||DHT-11, DHT-22|DHT sensor library (Adafruit)|Need to install Adafruit Unified Sensor Library|[LastMinuteEngineers](https://lastminuteengineers.com/dht11-dht22-arduino-tutorial/)|
+|||||[Adafruit](https://learn.adafruit.com/dht/using-a-dhtxx-sensor)|
+|Movement|Accelerometer|||[]()|
+||Gyroscope|Adafruit MPU6050 Library (Adafruit)|MPU-6050 Accelerometer Gyroscope|[LastMinuteEngineers](https://lastminuteengineers.com/mpu6050-accel-gyro-arduino-tutorial/)|
+|Gas||||[]()|
+|Water|Water Level|Nil|Use digital output and analog input|[LastMinuteEngineeers](https://lastminuteengineers.com/water-level-sensor-arduino-tutorial/)|
+|Touch|Touch Switch|Nil|Use digital inputs|[ArduinoGettingStarted](https://arduinogetstarted.com/tutorials/arduino-touch-sensor)|
+||Push Button Switch|Nil|Use digital inputs|[]()|
+||Variable Resistor|Nil|Use analog input|[Arduino](https://www.arduino.cc/en/tutorial/potentiometer)|
+||Rotary Encoder|Nil|Use digital inputs|[Dronebotworkshop](https://dronebotworkshop.com/rotary-encoders-arduino/)|
+||              |RotaryEncoder (Matthias Hertel)|Arduino|Improved version, takes care of debouncing<br>Alternative: [Rotary - Ben Buxton](http://www.buxtronix.net/2011/10/rotary-encoders-done-properly.html) |
+|||||[LastMinuteEngineers](https://lastminuteengineers.com/rotary-encoder-arduino-tutorial/)|
+||4X4 Membrane Keyboard|Keypad (Mark Stanley, etc)|Read/Write Operations|[LastMinueEngineers](https://lastminuteengineers.com/arduino-keypad-tutorial/)|
+|Memory|MicroSD Card Module|CardInfo Library|Arduino System Library, requires SPI library|[LastMinuteEngineers](https://lastminuteengineers.com/arduino-micro-sd-card-module-tutorial/)|
+|Time|DS3231 RTC|RTClib library|Requires Wire.h|[LastMinuteEngineers](https://lastminuteengineers.com/ds3231-rtc-arduino-tutorial/)|
+|Communications|Bluetooth HC-05 module|SoftwareSerial|Uses Tx/Rx|[Arduino](https://create.arduino.cc/projecthub/mayooghgirish/arduino-bluetooth-basic-tutorial-d8b737)|
+|||SoftwareSerial|System Library|[ExploreEmbedded](https://exploreembedded.com/wiki/Setting_up_Bluetooth_HC-05_with_Arduino)|
+
+&nbsp;
+
+## Output Devices
+
+|Physical     |Sensor           |Library       |Comment             |Reference  |
+|:------------|:----------------|:-------------|:-------------------|:------------------------------------|
+|Movement|DC Motor|Nil|Use L298N for control|[LastMinuteEngineers](https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/)|
+||Servo Motor - Angular|Servo|Arduino system library|[DroneBotworkshop](https://dronebotworkshop.com/servo-motors-with-arduino/)|
+||Servo Motor - Rotational|||[]()|
+||Stepper Motor 28BYJ-48 with ULN2003|Stepper|Arduino system library|[LastMinuteEngineers](https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/)|
+||NEMA Stepper Motor with L298N|Stepper|Arduino system library|[LastMinuteEngineers](https://lastminuteengineers.com/stepper-motor-l298n-arduino-tutorial/)|
+|||AccelStepper (Mike McCauley)|More refined library|[LastMinuteEngineers](https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/)|
+|Voltages|Transistor|Nil||[]()|
+||Relay|Nil|use digital outputs|[DroneBotworkshop](https://dronebotworkshop.com/ac-arduino/)|
+|||||[LastMinuteEngineers](https://lastminuteengineers.com/one-channel-relay-module-arduino-tutorial/)|
+|Light|LED|Nil||[]()|
+||RGB LED|Nil|Use analog (PWM) outputs|[EngineersGarage](https://www.engineersgarage.com/microcontroller-projects/articles-arduino-rgb-led-driver-analogwrite-pwm/)|
+||Neopixel WS2818|Adafruit NeoPixel (Adafruit)|Full-featured|[Adafruit](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels)|
+||||Complete Neopixel Guide|[Arduino](https://create.arduino.cc/projecthub/FunguyPro/the-complete-neopixel-guide-18374f)|
+||LCD 1602 with I2C|LiquidCrystal_PCF8574 (Matthias Hertel)|Improved libaray using Wire.h|[LastMinuteEngineers](https://lastminuteengineers.com/i2c-lcd-arduino-tutorial/)|
+|||||[Matthias Hertel](https://www.mathertel.de/Arduino/LiquidCrystal_PCF8574.aspx)|
+||4 Digit LED Tube (TM1637)|TM1637 driver (Avishay Orpaz)||[LastMinuteEngineers](https://lastminuteengineers.com/tm1637-arduino-tutorial/)|
+|||||[Makerguides Tutorial](https://www.makerguides.com/tm1637-arduino-tutorial/)|
+||MAX7219 Dot Matrix Display|MD_MAX72XX (MajicDesigns)||[LastMinuteEngineers](https://lastminuteengineers.com/max7219-dot-matrix-arduino-tutorial/)|
+||OLED Graphic Display SSD1306|Adafruit SSD1306 (Adafruit)|Requires Wire.h|[LastMinuteEngineers](https://lastminuteengineers.com/oled-display-arduino-tutorial/)|
+|Sound|Speaker/Buzzer|Nil|use tone()|[Adafruit](https://learn.adafruit.com/adafruit-arduino-lesson-10-making-sounds/overview)|
+||DFPlayer module|Nil|Standalone|[ElectronicsLab](https://www.electronics-lab.com/project/mp3-player-using-arduino-dfplayer-mini/)|
+
+&nbsp;
+
+
+
+<!-- Home, Back using Javascript -->
+<div style="height:2em"></div>
+<div>
+  <form>
+   <input type="button" value="Home" onclick="window.location.href='/ep1000digfab/index.html'">
+   <input type="button" value="Back" onclick="history.back()">
+  </form>
+</div>
+
+<!--End of markdown area-->
+</xmp>
+</body>
+<script type="text/javascript" src="/ep1000digfab/dist/strapdown.js"></script>
+</html>
+
